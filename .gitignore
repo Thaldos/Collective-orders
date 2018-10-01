@@ -1,0 +1,22 @@
+# Ignore configuration files that may contain sensitive information.
+website/sites/*/settings*.php
+website\sites\*\settings*.php
+
+# Ignore paths that contain user-generated content.
+website/sites/*/files
+website\sites\*\files
+website/sites/*/private
+website\sites\*\private
+
+.idea*
+website/.idea*
+website\.idea*
+website/.settings
+website\.settings
+website/.buildpath
+website\.buildpath
+website/.project
+website\.project
+.DS_Store
+website/.DS_Store
+website\.DS_Store
