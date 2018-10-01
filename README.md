@@ -1,5 +1,5 @@
 # Collective-orders
-Tool to do grouped orders
+Tool to manage grouped orders
 
 <br>
 
@@ -9,16 +9,15 @@ PHP 7.1 or better
 <br>
 
 
-## Installation 
+## Project installation 
+Copy past the project files on your server.
 
+Chmod the file `logs.txt` to 777.
 
 <br>
 
-## Note
-You can run manually the watering by typing in your Rapsberry Pi terminal :
-
+## Set the cron tab
+In a terminal, log as root then type `crontab -e` and add that kind of line:
 ```
-sudo php /home/pi/Raspberry-water-the-garden/waterthegardennow.php 
+* * * * 0 php /var/www/html/sendTheFormOfTheWeek.php 2>&1
 ```
-The garden will be watered during the delay defined by `DELAY_WATERING_MIN` in `config.php`.
-
