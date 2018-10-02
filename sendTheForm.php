@@ -8,16 +8,19 @@ use Symfony\Component\DomCrawler\Crawler;
 const DATE_FORMAT = 'Y-m-d H:i:s';
 const LOG_FILENAME = 'logs.txt';
 
-function sendTheFormOfTheWeek() {
+/**
+ * Fetch the products data, create the related google form and send the form with text to EMAIL_TO.
+ */
+function sendTheForm() {
     // Get the products :
     $products = getProducts(URL_TO_BE_PARSED);
 
-    // Get the Google form of the week :
+    // Get the Google form :
 
 
-    // Get the text to send of the week :
+    // Get the text to send :
 
-    // Send the text of the week :
+    // Send the text :
 
 }
 
@@ -84,4 +87,5 @@ function logThat(string $message): void {
     file_put_contents(LOG_FILENAME, $dateTimeNow->format(DATE_FORMAT) . ' : ' .$message . "\n", FILE_APPEND);
 }
 
-sendTheFormOfTheWeek();
+// Fetch the products data, create the related google form and send the form with text to EMAIL_TO :
+sendTheForm();
