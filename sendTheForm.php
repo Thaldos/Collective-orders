@@ -1,7 +1,8 @@
 <?php
 
 include_once 'config.php';
-require 'library/dom-crawler/vendor/autoload.php';
+require 'vendor/autoload.php';
+//require_once 'library/google-api-php-client/vendor/autoload.php';
 
 use Symfony\Component\DomCrawler\Crawler;
 
@@ -14,7 +15,7 @@ const LOG_FILENAME = 'logs.txt';
 function sendTheForm() {
     // Get the products :
     $products = getProducts(URL_TO_BE_PARSED);
-
+var_dump($products);
     // Get the Google form :
 
 
