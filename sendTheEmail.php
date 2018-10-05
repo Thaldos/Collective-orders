@@ -12,7 +12,7 @@ const LOG_FILENAME = 'logs.txt';
 /**
  * Fetch the products data, create the related google form and send the form with text to EMAIL_TO.
  */
-function sendTheForm() {
+function sendTheEmail() {
     // Get the products :
     $products = getProducts(URL_TO_BE_PARSED);
 var_dump($products);
@@ -89,4 +89,4 @@ function logThat(string $message): void {
 }
 
 // Fetch the products data, create the related google form and send the form with text to EMAIL_TO :
-sendTheForm();
+sendTheEmail();

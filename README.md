@@ -24,5 +24,5 @@ Configure the constants in `config.php`.
 ## Set the cron tab
 In a terminal, log as root then type `crontab -e` and add that kind of line:
 ```
-* * * * 0 php /var/www/html/sendTheFormOfTheWeek.php 2>&1
+* * * * 0 php /var/www/html/sendTheEmail.php 2>&1
 ```
