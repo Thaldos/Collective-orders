@@ -21,3 +21,5 @@ website\.project
 website/.DS_Store
 website\.DS_Store
 collective-orders-key-private.json
+vendor/*
+vendor\*

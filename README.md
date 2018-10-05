@@ -14,7 +14,7 @@ Copy past the project files on your server.
 
 Chmod the file `logs.txt` to 777.
 
-Download the vendors : `root@myserver:/var/www/html/collectiveorders/library/dom-crawler# composer install`.
+Download the vendors : `root@myserver:/var/www/html/collectiveorders# composer install`.
 
 Configure the constants in `config.php`.
 
